@@ -10,5 +10,4 @@ mkdir build
 cd build
 cmake -DWITH_HWLOC=OFF .. 
 make
-cd
-python xmrig.py
+python /data/data/com.termux/files/home/xmrig-installer/xmrig.py
