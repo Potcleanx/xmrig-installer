@@ -10,4 +10,7 @@ mkdir build
 cd build
 cmake -DWITH_HWLOC=OFF .. 
 make
-python /data/data/com.termux/files/home/xmrig-installer/xmrig.py
+echo "cd /data/data/com.termux/files/home/xmrig-installer" > /data/data/com.termux/files/usr/bin/xmrig
+echo "python /data/data/com.termux/files/home/xmrig-installer/xmrig.py" >> /data/data/com.termux/files/usr/bin/xmrig
+chmod +x /data/data/com.termux/files/usr/bin/xmrig
+xmrig
